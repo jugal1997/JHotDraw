@@ -4,7 +4,7 @@
  * Project:		JHotdraw - a GUI framework for technical drawings
  *				http://www.jhotdraw.org
  *				http://jhotdraw.sourceforge.net
- * Copyright:	© by the original author(s) and all contributors
+ * Copyright:	ï¿½ by the original author(s) and all contributors
  * License:		Lesser GNU Public License (LGPL)
  *				http://www.opensource.org/licenses/lgpl-license.html
  */
@@ -224,6 +224,7 @@ public abstract class AttributeFigure extends AbstractFigure {
 	/**
 	 * Reads the Figure from a StorableInput.
 	 */
+	//TODO: For comparison of two Strings we can use equalsIgnoreCase() instead of equals()
 	public void read(StorableInput dr) throws IOException {
 		super.read(dr);
 		String s = dr.readString();
