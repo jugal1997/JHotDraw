@@ -103,13 +103,13 @@ public  class CommandMenu extends JMenu implements ActionListener, CommandListen
 	/**
 	 * Executes the command.
 	 */
-	//FIXME: Object comparison should always be done by equals() in order to avoid issues.
+	
 	public void actionPerformed(ActionEvent e) {
 		Object source = e.getSource();
 		for (int i = 0; i < getItemCount(); i++) {
 			JMenuItem item = getItem(i);
 			// ignore separators (a separator has a hyphen as its label)
-			if (source == item) {
+			if (source.equals(item) ) {
 				Command cmd = (Command) hm.get(item);
 				if (cmd != null) {
 				    cmd.execute();
