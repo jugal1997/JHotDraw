@@ -144,10 +144,10 @@ public class DrawApplet
 	/**
 	 * Creates the color choice for the given attribute.
 	 */
-	//TODO: Always use curly braces when using a for loop as this will help in maintainability
+	
 	protected JComboBox createColorChoice(FigureAttributeConstant attribute) {
 		CommandChoice choice = new CommandChoice();
-		for (int i = 0; i < ColorMap.size(); i++)
+		for (int i = 0; i < ColorMap.size(); i++) {
 			choice.addItem(
 				new ChangeAttributeCommand(
 					ColorMap.name(i),
@@ -155,7 +155,7 @@ public class DrawApplet
 					ColorMap.color(i),
 					this
 				)
-			);
+			);}
 		return choice;
 	}
 
