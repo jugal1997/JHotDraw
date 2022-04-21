@@ -147,7 +147,7 @@ public  class   FigureAttributes
 	 * @see Storable
 	 * @see #write
 	 */
-	//TODO: Remove System.out.pritnln from production code
+	
 	public void write(StorableOutput dw) {
 		dw.writeString("attributes");
 
@@ -188,7 +188,7 @@ public  class   FigureAttributes
 				dw.writeString(Figure.POPUP_MENU);
 			}
 			else {
-				System.err.println("Unknown attribute: " + attributeValue);
+				//System.err.println("Unknown attribute: " + attributeValue);
 				dw.writeString("UNKNOWN");
 			}
 		}
