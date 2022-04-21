@@ -57,11 +57,12 @@ extends JHDTestCase
 	/**
 	 * Factory method for instances of the class to be tested.
 	 */
-	//TODO: Avoid instantiating integer in order to avoid wastage of space
+	
 	public ChangeAttributeCommand createInstance() throws Exception {
 		// JUnitDoclet begin method testcase.createInstance
 		FigureAttributeConstant fontStyle = FigureAttributeConstant.FONT_STYLE;
-		return new ChangeAttributeCommand("Bold", fontStyle, new Integer(Font.BOLD), getDrawingEditor());
+		Object o= new Integer(Font.BOLD);
+		return new ChangeAttributeCommand("Bold", fontStyle, o, getDrawingEditor());
 		// JUnitDoclet end method testcase.createInstance
 	}
 
