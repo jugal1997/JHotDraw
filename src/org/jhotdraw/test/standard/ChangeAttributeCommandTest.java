@@ -4,7 +4,7 @@
  * Project:		JHotdraw - a GUI framework for technical drawings
  *				http://www.jhotdraw.org
  *				http://jhotdraw.sourceforge.net
- * Copyright:	© by the original author(s) and all contributors
+ * Copyright:	ï¿½ by the original author(s) and all contributors
  * License:		Lesser GNU Public License (LGPL)
  *				http://www.opensource.org/licenses/lgpl-license.html
  */
@@ -57,6 +57,7 @@ extends JHDTestCase
 	/**
 	 * Factory method for instances of the class to be tested.
 	 */
+	//TODO: Avoid instantiating integer in order to avoid wastage of space
 	public ChangeAttributeCommand createInstance() throws Exception {
 		// JUnitDoclet begin method testcase.createInstance
 		FigureAttributeConstant fontStyle = FigureAttributeConstant.FONT_STYLE;
