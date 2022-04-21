@@ -152,14 +152,13 @@ public class JDOStorageFormat extends StandardStorageFormat {
 		startTransaction(pm);
 		return restoredDrawing;
 	}
-	//TODO: This method is not used throughout the code, we can get rid of it
-	private void retrieveAll(PersistenceManager pm, Figure figure) {
-		pm.retrieve(figure);
-		FigureEnumeration fe = figure.figures();
-		while (fe.hasNextFigure()) {
-			retrieveAll(pm, fe.nextFigure());
-		}
-	}
+//	private void retrieveAll(PersistenceManager pm, Figure figure) {
+//		pm.retrieve(figure);
+//		FigureEnumeration fe = figure.figures();
+//		while (fe.hasNextFigure()) {
+//			retrieveAll(pm, fe.nextFigure());
+//		}
+//	}
 
 	private Drawing crossTxnBoundaries(Drawing originalDrawing) {
 		return (Drawing)((StandardDrawing)originalDrawing).clone();
