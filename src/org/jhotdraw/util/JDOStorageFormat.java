@@ -4,7 +4,7 @@
  * Project:		JHotdraw - a GUI framework for technical drawings
  *				http://www.jhotdraw.org
  *				http://jhotdraw.sourceforge.net
- * Copyright:	© by the original author(s) and all contributors
+ * Copyright:	ï¿½ by the original author(s) and all contributors
  * License:		Lesser GNU Public License (LGPL)
  *				http://www.opensource.org/licenses/lgpl-license.html
  */
@@ -152,7 +152,7 @@ public class JDOStorageFormat extends StandardStorageFormat {
 		startTransaction(pm);
 		return restoredDrawing;
 	}
-
+	//TODO: This method is not used throughout the code, we can get rid of it
 	private void retrieveAll(PersistenceManager pm, Figure figure) {
 		pm.retrieve(figure);
 		FigureEnumeration fe = figure.figures();
