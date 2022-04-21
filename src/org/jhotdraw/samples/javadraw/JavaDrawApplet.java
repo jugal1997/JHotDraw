@@ -121,12 +121,13 @@ public  class JavaDrawApplet extends DrawApplet {
 			fAnimationButton.setText("Start Animation");
 		}
 	}
-	//TODO: if-else statements must use curly braces as it will help in the future with maintainability
 	public void toggleAnimation() {
-		if (fAnimator != null)
+		if (fAnimator != null) {
 			endAnimation();
-		else
+			}
+		else {
 			startAnimation();
+			}
 	}
 
 }
