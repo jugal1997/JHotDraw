@@ -4,7 +4,7 @@
  * Project:		JHotdraw - a GUI framework for technical drawings
  *				http://www.jhotdraw.org
  *				http://jhotdraw.sourceforge.net
- * Copyright:	© by the original author(s) and all contributors
+ * Copyright:	ï¿½ by the original author(s) and all contributors
  * License:		Lesser GNU Public License (LGPL)
  *				http://www.opensource.org/licenses/lgpl-license.html
  */
@@ -144,6 +144,7 @@ public class DrawApplet
 	/**
 	 * Creates the color choice for the given attribute.
 	 */
+	//TODO: Always use curly braces when using a for loop as this will help in maintainability
 	protected JComboBox createColorChoice(FigureAttributeConstant attribute) {
 		CommandChoice choice = new CommandChoice();
 		for (int i = 0; i < ColorMap.size(); i++)
