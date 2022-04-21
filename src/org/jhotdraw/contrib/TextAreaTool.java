@@ -66,7 +66,7 @@ public class TextAreaTool extends CreationTool {
 	 * @param x  Description of the Parameter
 	 * @param y  Description of the Parameter
 	 */
-	//TODO: Get rid of the empty else block as it doesn't do anything
+	
 	public void mouseDown(MouseEvent e, int x, int y) {
 		setView((DrawingView)e.getSource());
 		Figure pressedFigure = drawing().findFigureInside(x, y);
@@ -86,13 +86,6 @@ public class TextAreaTool extends CreationTool {
 				drawing().remove(getAddedFigure());
 				// nothing to undo
 				setUndoActivity(null);
-			}
-			else {
-//				// use undo activity from paste command...
-//				setUndoActivity(createUndoActivity());
-//
-//				// put created figure into a figure enumeration
-//				getUndoActivity().setAffectedFigures(new SingleFigureEnumerator(getAddedFigure()));
 			}
 			setTypingTarget(null);
 			setCreatedFigure(null);
