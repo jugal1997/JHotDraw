@@ -4,7 +4,7 @@
  * Project:		JHotdraw - a GUI framework for technical drawings
  *				http://www.jhotdraw.org
  *				http://jhotdraw.sourceforge.net
- * Copyright:	© by the original author(s) and all contributors
+ * Copyright:	ï¿½ by the original author(s) and all contributors
  * License:		Lesser GNU Public License (LGPL)
  *				http://www.opensource.org/licenses/lgpl-license.html
  */
@@ -103,6 +103,7 @@ public  class CommandMenu extends JMenu implements ActionListener, CommandListen
 	/**
 	 * Executes the command.
 	 */
+	//FIXME: Object comparison should always be done by equals() in order to avoid issues.
 	public void actionPerformed(ActionEvent e) {
 		Object source = e.getSource();
 		for (int i = 0; i < getItemCount(); i++) {
