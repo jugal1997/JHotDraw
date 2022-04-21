@@ -224,11 +224,11 @@ public abstract class AttributeFigure extends AbstractFigure {
 	/**
 	 * Reads the Figure from a StorableInput.
 	 */
-	//TODO: For comparison of two Strings we can use equalsIgnoreCase() instead of equals()
+	
 	public void read(StorableInput dr) throws IOException {
 		super.read(dr);
 		String s = dr.readString();
-		if (s.toLowerCase().equals("attributes")) {
+		if (s.equalsIgnoreCase("attributes")) {
 			fAttributes = new FigureAttributes();
 			fAttributes.read(dr);
 		}
