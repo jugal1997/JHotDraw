@@ -49,10 +49,9 @@ public class EllipseFigureGeometricAdapter extends EllipseFigure
 	 *
 	 * @return   The shape value
 	 */
-	//TODO: Avoid using unnecessary local variables as this wastes memory
+	
 	public Shape getShape() {
 		Rectangle rect = displayBox();
-		Ellipse2D.Float ellipse = new Ellipse2D.Float(rect.x, rect.y, rect.width, rect.height);
-		return ellipse;
+		return new Ellipse2D.Float(rect.x, rect.y, rect.width, rect.height);
 	}
 }
