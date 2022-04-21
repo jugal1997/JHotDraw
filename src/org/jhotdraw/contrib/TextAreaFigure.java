@@ -105,12 +105,12 @@ public class TextAreaFigure extends AttributeFigure
 
 
 	/** Constructor for the TextAreaFigure object */
-	//TODO: We avoid creating new Strig() objects as it wastes memory
+	
 	public TextAreaFigure() {
 		fParagraphs = CollectionsFactory.current().createList();
 		fDisplayBox = new Rectangle(0, 0, 30, 15);
 		fFont = createFont();
-		fText = new String("");
+		fText = "";
 
 		fSizeIsDirty = true;
 		fTextIsDirty = true;
